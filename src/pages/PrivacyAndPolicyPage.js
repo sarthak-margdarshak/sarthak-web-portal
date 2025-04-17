@@ -22,13 +22,14 @@ const TYPOGRAPHYS = [
   {
     title: "Introduction",
     desc: [
-      "Sarthak Guidance Institute is committed to protecting the privacy and confidentiality of personal information collected from students, faculty, staff, and other individuals associated with the Institute. This Privacy Policy outlines how we collect, use, store, and protect personal information in accordance with applicable privacy laws and regulations.",
+      "Sarthak Guidance Institute is committed to protecting the privacy and confidentiality of personal information collected from students, faculty, staff, and other individuals associated with the Institute.",
+      "This Privacy Policy outlines how we collect, use, store, and protect personal information in accordance with applicable privacy laws and regulations.",
     ],
   },
   {
     title: "Personal Information Collection and Use",
     desc: [
-      "The Institute collects personal information, such as names, contact details, academic records, and any other relevant information, for purposes including but not limited to Admission processes, Academic administration and support Communication with students, faculty, staff, and stakeholders Institutional research and reporting",
+      "The Institute collects personal information, such as names, contact details.",
     ],
   },
   {
@@ -43,7 +44,7 @@ const TYPOGRAPHYS = [
     desc: [
       "The Institute implements reasonable security measures to protect personal information from unauthorized access, loss, or disclosure.",
       "Personal information is treated as confidential and is only accessed and disclosed on a need-to-know basis.",
-      "Secure technologies, encryption, access controls, and employee training are utilized to safeguard personal information.",
+      "Secure technologies, encryption and access controls are utilized to safeguard personal information.",
     ],
   },
   {
