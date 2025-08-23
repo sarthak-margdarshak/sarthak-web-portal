@@ -16,7 +16,15 @@ import { m, useScroll } from "framer-motion";
 import React, { useEffect, useState } from "react";
 // @mui
 import { styled, alpha } from "@mui/material/styles";
-import { Box, Container, Typography, Stack, Grid, Rating } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  Stack,
+  Grid,
+  Rating,
+  Button,
+} from "@mui/material";
 // hooks
 import useResponsive from "../../hooks/useResponsive";
 // utils
@@ -25,6 +33,7 @@ import { textGradient, bgGradient } from "../../utils/cssStyles";
 import { HEADER } from "../../config-global";
 // components
 import { MotionContainer, varFade } from "../../components/animate";
+import Iconify from "../../components/iconify";
 
 // ----------------------------------------------------------------------
 
@@ -214,24 +223,42 @@ function Description() {
           direction={{ xs: "column-reverse", sm: "row" }}
           sx={{ mb: 5 }}
         >
-          {/* <Button
-            component={RouterLink}
-            to="https://sarthakguidanceinstitute.ac.in/"
-            color="inherit"
-            size="large"
+          {/* ===================== UPDATED BUTTON CODE START ===================== */}
+          <Button
+            component="a" // Changed to an anchor tag for external links
+            href="https://play.google.com/store/apps/details?id=in.sarthakmargdarshak.app"
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // Security measure for external links
             variant="contained"
-            startIcon={<Iconify icon="ic:twotone-touch-app" width={24} />}
             sx={{
-              bgcolor: "text.primary",
-              color: (theme) =>
-                theme.palette.mode === "light" ? "common.white" : "grey.800",
+              py: 1,
+              px: 2.5,
+              bgcolor: "common.black",
+              color: "common.white",
+              textTransform: "none", // Prevents MUI from making text all caps
               "&:hover": {
-                bgcolor: "text.primary",
+                bgcolor: "grey.800",
               },
             }}
           >
-            Student Web App
-          </Button> */}
+            <Iconify
+              icon="logos:google-play-icon"
+              width={28}
+              sx={{ mr: 1.5 }}
+            />
+            <Stack alignItems="flex-start">
+              <Typography
+                variant="caption"
+                sx={{ lineHeight: 1, fontWeight: "fontWeightMedium" }}
+              >
+                Download on
+              </Typography>
+              <Typography variant="h6" sx={{ lineHeight: 1, mt: 0.5 }}>
+                Android
+              </Typography>
+            </Stack>
+          </Button>
+          {/* ===================== UPDATED BUTTON CODE END ======================= */}
         </Stack>
       </m.div>
     </StyledDescription>
